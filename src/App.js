@@ -26,7 +26,7 @@ function Home(props) {
             variant="primary"
             onClick={() => {
               console.log('OAuth config:', JSON.stringify(awsconfig.oauth));
-              Auth.federatedSignIn({customProvider: 'Okta'}).catch(e => console.error('federatedSignIn error:', e));
+              Auth.federatedSignIn({customProvider: 'IDC'}).catch(e => console.error('federatedSignIn error:', e));
             }}
           >
             Federated Sign In
