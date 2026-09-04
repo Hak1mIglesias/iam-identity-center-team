@@ -71,6 +71,10 @@ function App() {
 
   function setData() {
     getUser().then((userData) => {
+      if (!userData || !userData.signInUserSession) {
+        setLoading(false);
+        return;
+      }
       setUser(userData);
       const payload = userData.signInUserSession.idToken.payload;
       setcognitoGroups(payload["cognito:groups"]);
