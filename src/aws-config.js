@@ -27,7 +27,7 @@ const awsmobile = {
     "aws_cognito_username_attributes": [
         "EMAIL"
     ],
-    "aws_cognito_social_providers": ["IDC"],
+    "aws_cognito_social_providers": ["Okta"],
     "aws_cognito_signup_attributes": [
         "EMAIL"
     ],
