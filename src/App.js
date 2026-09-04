@@ -24,7 +24,10 @@ function Home(props) {
           <Button
             className="homebutton"
             variant="primary"
-            onClick={() => Auth.federatedSignIn({customProvider: 'Okta'})}
+            onClick={() => {
+              console.log('OAuth config:', JSON.stringify(awsconfig.oauth));
+              Auth.federatedSignIn({customProvider: 'Okta'}).catch(e => console.error('federatedSignIn error:', e));
+            }}
           >
             Federated Sign In
           </Button>
