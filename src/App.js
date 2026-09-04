@@ -5,7 +5,7 @@
 import React, { useEffect, useState } from "react";
 import { Amplify, Auth, Hub } from "aws-amplify";
 import { Spin, Layout } from "antd";
-import awsconfig from "./aws-exports";
+import awsconfig from "./aws-config";
 import Nav from "./components/Navigation/Nav";
 import home from "./media/Home.svg";
 import "./index.css";
